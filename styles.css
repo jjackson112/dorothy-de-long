@@ -1,3 +1,37 @@
-header {
-    
+.header-wrapper {
+    background-image: url(img/smile.png);
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-wrapper figcaption {
+    color: #6CCBFB;
+}
+nav ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+h1, #first-caption {
+    color: #ffffff;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+  }
+
+.artist-wrapper {
+    background: #B6E3FA;
+}
+
+.portfolio-wrapper {
+    background: #596F7A;
+}
+
+footer {
+    background: #B6E3FA;
 }
