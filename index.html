@@ -8,25 +8,42 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
-    <script src="app.js" defer></script>
+    <script src="app.js"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header class="header-wrapper">
     <div class="logo-container">
         <figure>
-            <img src="img/Logo.png" alt="Dorothy's custom logo">
-            <figcaption>Dorothy de Long</figcaption>
+            <img src="img/ogo.png">
+            <p class="logo-caption">Dorothy de Long</p>
         </figure>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <div class="hero-text">
         <h1 id="#tagline">"I capture the realism behind feminism, no filter."</h1>
-        <caption id="#first-caption">Smile, San Francisco<br> California- August 4, 2017</caption>
+    </div>
+    <div class="hero-caption">
+        <p class="first-caption">Smile, San Francisco<br> California- August 4, 2017</p>
     </div>
 </header>
 <body>
@@ -49,68 +66,68 @@
             <div class="image-item">
                 <figure>
                     <img src="img/black-girl-magic.png">
-                    <caption>Black Girl Magic. Houston, TX. January 17, 2016</caption>
+                    <p><caption>Black Girl Magic<br> Houston, TX.<br> January 17, 2016</caption></p>
                 </figure>
             </div>
             <div class="image-item">
                 <figure>
                     <img src="img/flex.png">
-                    <caption>Flex. Madison, WI. July 24, 2015</caption>
+                    <p><caption>Flex<br> Madison, WI.<br> July 24, 2015</caption></p>
                 </figure>
             </div>
             <div class="image-item">
                 <figure>
                     <img src="img/moment.png">
-                    <caption>Moment, FemRockFest, Austin, Texas July 17, 2018</caption>
+                    <p><caption>Moment, FemRockFest<br> Austin, Texas<br> July 17, 2018</caption></p>
                 </figure>
             </div>
             <div class="image-item">
                 <figure>
                     <img src="img/flag.png">
-                    <caption>Flag, LGBTQIA March in Washington, DC November 12, 2017</caption>
+                    <p><caption>Flag LGBTQIA March<br> in Washington, DC<br> November 12, 2017</caption></p>
                 </figure>
             </div>
             <div class="image-item">
                 <figure>
                     <img src="img/father.png">
-                    <caption>Father, Denver, Colorado June 25, 2018</caption>
+                    <p><caption>Father<br> Denver, Colorado<br> June 25, 2018</caption></p>
                 </figure>
             </div>
             <div class="image-item">
                 <figure>
                     <img src="img/haircut.png">
-                    <caption>Haircut, New York City March 31, 2018</caption>
+                    <p><caption>Haircut<br> New York City<br> March 31, 2018</caption></p>
                 </figure>
             </div>
         </div>
     </section>
 </body>
 <footer>
-    <h3 class="contact-header">Contact Me</h3>
+    <h2 class="contact-header">Contact Me</h2>
         <div class="contact-wrapper">
-            <h4>Let's Chat!</h4>
+            <h3>Let's Chat!</h3>
             <div class="contact-content">
-                <p>555-555-5555</p>
+                <p class="number">555-555-5555</p>
                 <address>
-                    <p>delong@gallery.com</p>
+                    <p>dorothydelong@gallery.com</p>
                 </address>
             </div>
-        </div>
-        <div class="social-media">
-            <h4>Let's Connect!</h4>
-            <div class="social-media-icons">
-                <p>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </p>
-                <p>
-                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                </p>
-                <p>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </p>
-                <p>
-                    <a href="https://www.flickr.com/" target="_blank"><i class="fab fa-flickr"></i></a>
-                </p>
+            <div class="social-media">
+                <h3>Let's Connect!</h3>
+                <div class="social-media-icons">
+                    <p>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </p>
+                    <p>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </p>
+                    <p>
+                        <a href="https://www.flickr.com/" target="_blank"><i class="fab fa-flickr"></i></a>
+                    </p>
+                </div>
             </div>
         </div>
     <div class="copyright">

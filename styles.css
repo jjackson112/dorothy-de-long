@@ -1,37 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+html {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p, caption {
+    font-family: 'Lato', sans-serif;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Header Styles */
+
 .header-wrapper {
     background-image: url(img/smile.png);
-    height: 650px;
+    height: 675px;
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.header-wrapper figcaption {
+.logo-caption {
     color: #6CCBFB;
-}
-nav ul li a {
-    color: #ffffff;
-    text-transform: uppercase;
-
-}
-h1, #first-caption {
-    color: #ffffff;
+    font-weight: 500;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-img {
-    width: 200px;
-    height: 300px;
-    object-fit: contain;
-  }
+header nav {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}
+
+header nav ul {
+    padding: 15px 15px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-caption {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-top: 55%;
+}
+
+.first-caption {
+    padding: 20px 15px;
+    color: #F5F5F5;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+/* Artist's Statement Styles */
 
 .artist-wrapper {
     background: #B6E3FA;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 20px 20px;
 }
+
+.artist-photo img {
+    height: auto;
+    width: 225px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.artist-header, .statement p {
+    color: #596F7A;
+}
+
+.statement p {
+    font-size: 1.3em;
+    padding: 15px 15px;
+}
+
+/* Portfolio Styles */
 
 .portfolio-wrapper {
     background: #596F7A;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 25px 30px;
 }
 
+.portfolio-header, .image-item p {
+    color: #6CCBFB;
+}
+
+.image-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.image-item p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+
 footer {
-    background: #B6E3FA;
+    background-color: #B6E3FA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column nowrap;
+}
+
+footer .contact-wrapper {
+    flex-direction: column;
+}
+
+.contact-header, h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #596F7A;
+}
+
+h2 {
+    padding: 15px 25px;
+}
+
+h3 {
+   padding: 20px 25px;
+}
+
+.contact-content p {
+    font-size: 1.125em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.social-media {
+    padding: 15px 15px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.social-media-icons p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: #596F7A;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.social-media-icons p i {
+    font-size: 1.33em;
+    color: #6CCBFB;
+}
+
+.copyright {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
