@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <script src="app.js"></script>
 
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,26 +20,29 @@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header class="header-wrapper">
-    <div class="logo-container">
-        <figure>
-            <img src="img/ogo.png">
-            <p class="logo-caption">Dorothy de Long</p>
-        </figure>
-    </div>
-    <nav class="navbar">
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav class="logo-hamburger-container">
+        <div class="logo-container">
+            <figure>
+                <img src="img/ogo.png">
+                <p class="logo-caption">Dorothy de Long</p>
+            </figure>
+        </div>
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>    
         </div>
     </nav>
     <div class="hero-text">
@@ -47,7 +53,7 @@
     </div>
 </header>
 <body>
-    <section class="artist-wrapper">
+    <section class="artist-wrapper" id="#about">
         <h2 class="artist-header">Artist's Statement</h2>
         <div class="artist-content">
             <div class="artist-photo">
@@ -60,7 +66,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio-wrapper">
+    <section class="portfolio-wrapper" id="#portfolio">
         <h2 class="portfolio-header">Portfolio</h2>
         <div class="portfolio-list">
             <div class="image-item">
@@ -101,8 +107,9 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
-<footer>
+<footer id="#contact">
     <h2 class="contact-header">Contact Me</h2>
         <div class="contact-wrapper">
             <h3>Let's Chat!</h3>

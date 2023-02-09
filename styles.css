@@ -13,6 +13,7 @@ ul {
     list-style: none;
     text-transform: uppercase;
     text-decoration: none;
+    display: none;
 }
 
 h1, h2, h3 {
@@ -38,6 +39,13 @@ address {
     background-size: cover;
 }
 
+.logo-hamburger-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
 .logo-caption {
     color: #6CCBFB;
     font-weight: 500;
@@ -50,6 +58,7 @@ header nav {
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap;
+    display: block;
 }
 
 header nav ul {
@@ -65,34 +74,10 @@ header nav ul li a{
     text-decoration: none;
 }
 
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1rem 1.5rem;
-}
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
-.hero-text {
+.hero-text h1 {
     display: flex;
     justify-content: flex-start;
     padding: 20px 20px;
-}
-
-h1 {
     color: #ffffff;
 }
 
@@ -133,7 +118,7 @@ h1 {
 .artist-photo img {
     height: auto;
     width: 225px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50%;
 }
 
